@@ -62,3 +62,21 @@
   line-height: 150%;
   letter-spacing: 0px;
 }
+
+body {
+  padding: var(--spacing-1600) var(--spacing-600);
+  display: flex;
+  justify-content: center;
+  background-color: var(--stone-100);
+}
+
+.card {
+  padding: var(--spacing-500);
+  width: 736px;
+  background-color: var(--white);
+
+  img {
+    width: auto;
+    height: 300px;
+  }
+}
