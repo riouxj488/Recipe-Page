@@ -13,6 +13,14 @@
   --stone-100: #f3e5d7;
   --brown-800: #854632;
   --white: #ffffff;
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
 }
 
 .text-preset-1 {
