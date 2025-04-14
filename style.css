@@ -21,6 +21,7 @@
   --spacing-200: 16px;
   --spacing-150: 12px;
   --spacing-100: 8px;
+  --text-preset-1: .text-preset-1;
 }
 
 .text-preset-1 {
@@ -55,14 +56,6 @@
   letter-spacing: 0px;
 }
 
-.text-preset-4-bold {
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0px;
-}
-
 body {
   padding: var(--spacing-1600) var(--spacing-600);
   display: flex;
@@ -78,5 +71,42 @@ body {
   img {
     width: auto;
     height: 300px;
+    border-radius: 12px;
+    margin-bottom: var(--spacing-500);
+  }
+
+  h1 {
+    color: var(--stone-900);
+  }
+
+  p {
+    color: var(--stone-600);
+  }
+
+  span {
+    font-weight: 700;
+  }
+
+  h2 {
+    color: var(--rose-800);
+  }
+
+  li {
+    color: var(--stone-600);
+    list-style-position: inside;
+  }
+
+  h3 {
+    color: var(--brown-800);
+  }
+
+  th {
+    color: var(--stone-600);
+    font-weight: 400;
+  }
+
+  td {
+    color: var(--brown-800);
+    font-weight: 700;
   }
 }
