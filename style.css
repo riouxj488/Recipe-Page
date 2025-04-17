@@ -67,6 +67,7 @@ body {
   padding: var(--spacing-500);
   width: 736px;
   background-color: var(--white);
+  border-radius: var(--spacing-300);
 
   img {
     width: auto;
@@ -91,22 +92,93 @@ body {
     color: var(--rose-800);
   }
 
+  ul,
+  ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-100);
+  }
+
   li {
     color: var(--stone-600);
     list-style-position: inside;
+  }
+
+  ol li::marker,
+  ul li::marker {
+    color: var(--brown-800);
   }
 
   h3 {
     color: var(--brown-800);
   }
 
-  th {
-    color: var(--stone-600);
-    font-weight: 400;
+  hr {
+    border: 1px solid var(--stone-150);
   }
 
-  td {
-    color: var(--brown-800);
-    font-weight: 700;
+  .table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-150);
+
+    .tr {
+      display: flex;
+      padding-left: var(--spacing-300);
+      gap: var(--spacing-200);
+    }
+
+    .th {
+      color: var(--stone-600);
+      font-weight: 400;
+    }
+
+    .td {
+      color: var(--brown-800);
+      font-weight: 700;
+    }
+    .th,
+    .td {
+      width: 288px;
+    }
   }
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.preparation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+  padding: var(--spacing-300);
+  background-color: var(--rose-50);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
 }
