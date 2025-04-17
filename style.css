@@ -58,8 +58,6 @@
 
 body {
   padding: var(--spacing-1600) var(--spacing-600);
-  display: flex;
-  justify-content: center;
   background-color: var(--stone-100);
 }
 
@@ -68,12 +66,14 @@ body {
   width: 736px;
   background-color: var(--white);
   border-radius: var(--spacing-300);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-500);
 
   img {
-    width: auto;
+    width: 100%;
     height: 300px;
     border-radius: 12px;
-    margin-bottom: var(--spacing-500);
   }
 
   h1 {
@@ -181,4 +181,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-300);
+}
+
+@media screen and (max-width: 770px) {
+  .card {
+    width: 616px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding: 0;
+  }
+  .card {
+    width: 375px;
+    padding: 0;
+    gap: 0;
+
+    img {
+      max-height: 171px;
+    }
+  }
+
+  .text-content {
+    padding: var(--spacing-500) var(--spacing-400);
+  }
 }
